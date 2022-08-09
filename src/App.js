@@ -1,11 +1,14 @@
-
+import {Route, Routes, BrowserRouter as Router } from 'react-router-dom'
+import Home from './pages/Home'
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Raden Rovcanin
-      </h1>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home/>}></Route>
+        </Routes>
+      </Router>
     </>
   );
 }
