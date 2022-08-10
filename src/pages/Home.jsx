@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 const Home = () => {
     return (
-        <div className="text-gray-700">
+        <div className="text-gray-700 font-body">
             <div>
                 <nav>
                     <div>
@@ -32,10 +32,17 @@ const Home = () => {
             </div>
 
             <main className='px-16 py-6'>
-                <div>
+                <div className="flex text-orange-200 justify-end">
                     <Link to='#'>Log in</Link>
-                    <Link to='#'>Sign up</Link>
+                    <Link to='#' className="ml-2">Sign up</Link>
                 </div>
+
+                {/* <div className="flex items-end">
+                    <div className="bg-red-500 w-4 h-4"></div>
+                    <div className="bg-green-500 w-6 h-6"></div>
+                    <div className="bg-blue-500 w-8 h-8"></div>
+                </div> */}
+
 
                 <header>
                     <h2 className='text-gray-900 text-6xl font-semibold'>Recepies</h2>
@@ -61,8 +68,8 @@ const Home = () => {
                     </div>
                 </div>
                 
-                <div>
-                    <div>Load More</div>
+                <div className="flex justify-center">
+                    <div className="bg-slate-400 text-orange-400">Load More</div>
                 </div>
             
             </main>
