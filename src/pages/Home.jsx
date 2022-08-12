@@ -1,13 +1,13 @@
 import {Link} from 'react-router-dom';
 const Home = () => {
     return (
-        <div className="text-gray-700 font-body">
+        <div className="text-gray-700 bg-gray-200 font-body">
             <div>
                 <nav>
                     <div>
                         <h1 className="font-bold uppercase p-4 border-b border-gray-100">
-                            <Link to='/'>
-                                <span>Food ninja</span>
+                            <Link to='/' className="text-green-500 sm:text-red-700 lg:text-blue-700 text-sm md:text-xl">
+                                Food ninja
                             </Link>
                         </h1>
                     </div>
@@ -32,7 +32,7 @@ const Home = () => {
             </div>
 
             <main className='px-16 py-6'>
-                <div className="flex text-orange-200 justify-end">
+                <div className="flex text-orange-200 justify-center md:justify-end">
                     <Link to='#'>Log in</Link>
                     <Link to='#' className="ml-2">Sign up</Link>
                 </div>
@@ -53,11 +53,11 @@ const Home = () => {
                     <h4 className='font-bold mt-12 pb-2 border-b-2 border-gray-200'>Latest recepies</h4>
 
                     <div className='mt-8'>
-                        <div>
-                            <img src="" alt="" />
-                            <div>
-                                <span>Bean chili stew</span>
-                                <span>Recepie by Mario</span>
+                        <div className="bg-white rounded overflow-hidden shadow-md">
+                            <img src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-mediumThreeByTwo440-v2.jpg" alt="" className="w-full h-32 sm:h-48 object-cover" />
+                            <div className="m-4">
+                                <span className="font-bold">Bean chili stew</span>
+                                <span className="block text-gray-500 text-sm">Recepie by Mario</span>
                             </div>
                         </div>
                     </div>
