@@ -53,11 +53,14 @@ const Home = () => {
                     <h4 className='font-bold mt-12 pb-2 border-b-2 border-gray-200'>Latest recepies</h4>
 
                     <div className='mt-8'>
-                        <div className="bg-white rounded overflow-hidden shadow-md">
+                        <div className="bg-white rounded overflow-hidden shadow-md relative">
                             <img src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-mediumThreeByTwo440-v2.jpg" alt="" className="w-full h-32 sm:h-48 object-cover" />
                             <div className="m-4">
                                 <span className="font-bold">Bean chili stew</span>
                                 <span className="block text-gray-500 text-sm">Recepie by Mario</span>
+                            </div>
+                            <div className="bg-amber-300 text-amber-800 text-xs uppercase font-bold rounded-full p-2 absolute top-0 mt-1 ml-1">
+                                <span>25 min</span>
                             </div>
                         </div>
                     </div>
