@@ -53,13 +53,33 @@ const Home = () => {
                     <h4 className='font-bold mt-12 pb-2 border-b-2 border-gray-200'>Latest recepies</h4>
 
                     <div className='mt-8'>
-                        <div className="bg-white rounded overflow-hidden shadow-md relative">
+                        <div className="card">
                             <img src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-mediumThreeByTwo440-v2.jpg" alt="" className="w-full h-32 sm:h-48 object-cover" />
                             <div className="m-4">
                                 <span className="font-bold">Bean chili stew</span>
                                 <span className="block text-gray-500 text-sm">Recepie by Mario</span>
                             </div>
-                            <div className="bg-amber-300 text-amber-800 text-xs uppercase font-bold rounded-full p-2 absolute top-0 mt-1 ml-1">
+                            <div className="badge">
+                                <span>25 min</span>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <img src="https://www.thespruceeats.com/thmb/0NYiiP8oJ-hIh2JA9Rb7QDglmrc=/1500x1000/filters:no_upscale()/easy-bangkok-street-vendor-noodles-3217098-step-05-84be4b73f0c14287a6be3679d145ae1d.jpg" alt="" className="w-full h-32 sm:h-48 object-cover"/>
+                            <div className="m-4">
+                                <span className="font-bold">Noodles</span>
+                                <span className="block text-gray-500 text-sm">Recepie by Mario</span>
+                            </div>
+                            <div className="badge">
+                                <span>25 min</span>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <img src="https://rainbowplantlife.com/wp-content/uploads/2022/02/boiled-tofu-curry-cover-photo-1-of-1.jpg" alt="" className="w-full h-32 sm:h-48 object-cover" />
+                            <div className="m-4">
+                                <span className="font-bold">Bean chili stew</span>
+                                <span className="block text-gray-500 text-sm">Recepie by Mario</span>
+                            </div>
+                            <div className="badge">
                                 <span>25 min</span>
                             </div>
                         </div>
