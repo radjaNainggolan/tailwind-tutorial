@@ -7,7 +7,7 @@ const Home = () => {
                     <nav>
                         <div>
                             <h1 className="font-bold uppercase p-4 border-b border-gray-100">
-                                <Link to='/' className="text-green-500 sm:text-red-700 lg:text-blue-700 text-sm md:text-xl">
+                                <Link to='/' className="text-green-500 sm:text-red-700 lg:text-blue-700 text-sm md:text-xl hover:text-gray-700">
                                     Food ninja
                                 </Link>
                             </h1>
@@ -37,8 +37,8 @@ const Home = () => {
 
                 <main className='px-16 py-6 md:col-span-2'>
                     <div className="flex text-orange-200 justify-center md:justify-end">
-                        <Link to='#' className="btn md:border-amber-300 md:border-2">Log in</Link>
-                        <Link to='#' className="btn ml-2 md:border-amber-300 md:border-2">Sign up</Link>
+                        <Link to='#' className="btn md:border-amber-300 md:border-2 hover:bg-amber-200 hover:text-white">Log in</Link>
+                        <Link to='#' className="btn ml-2 md:border-amber-300 md:border-2 hover:bg-amber-200 hover:text-white ">Sign up</Link>
                     </div>
 
                     {/* <div className="flex items-end">
