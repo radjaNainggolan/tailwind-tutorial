@@ -34,8 +34,8 @@ const Home = () => {
 
                 <main className='px-16 py-6 md:col-span-2'>
                     <div className="flex text-orange-200 justify-center md:justify-end">
-                        <Link to='#'>Log in</Link>
-                        <Link to='#' className="ml-2">Sign up</Link>
+                        <Link to='#' className="btn md:border-amber-300 md:border-2">Log in</Link>
+                        <Link to='#' className="btn ml-2 md:border-amber-300 md:border-2">Sign up</Link>
                     </div>
 
                     {/* <div className="flex items-end">
@@ -93,7 +93,7 @@ const Home = () => {
                     </div>
                     
                     <div className="flex justify-center">
-                        <div className="bg-slate-400 text-orange-400">Load More</div>
+                        <div className="btn bg-slate-400 text-orange-400">Load More</div>
                     </div>
                 
                 </main>
