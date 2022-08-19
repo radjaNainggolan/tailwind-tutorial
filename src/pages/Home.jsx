@@ -1,21 +1,25 @@
 import {Link} from 'react-router-dom';
+import { useState } from 'react';
 const Home = () => {
+
+    const [open, setOpen] = useState(false);
+    console.log(open);
     return (
         <div className="text-gray-700 bg-gray-200 font-body">
             <div className="grid md:grid-cols-3">
                 <div className="md:col-span-1 md:flex md:justify-end">
                     <nav className="text-right">
-                        <div>
+                        <div className="flex items-center justify-between">
                             <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                                 <Link to='/' className="text-green-500 sm:text-red-700 lg:text-blue-700 text-sm md:text-xl hover:text-gray-700">
                                     Food ninja
                                 </Link>
                             </h1>
-                            <div  className="md:hidden">
+                            <div  className="px-4 mr-2 cursor-pointer md:hidden" onClick={()=>{setOpen(!open);}}>
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
                             </div>
                         </div>
-                        <ul className="hidden md:block md:text-sm md:mt-6 md:space-y-3">
+                        <ul className={`${open?'':'hidden'} md:block md:text-sm md:mt-6 md:space-y-3`}>
                             <li className="text-gray-700 font-bold">
                                 <Link to='#' className=" px-4 flex justify-end active:border-r-2 active:border-amber-600" >
                                     <span>Home</span>
